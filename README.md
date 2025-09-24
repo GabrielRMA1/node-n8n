@@ -52,9 +52,9 @@ docker-compose up
 
 ### 3. Acessar o n8n
 
-Abra o navegador em: http://localhost:5678
+- Abra o navegador em: http://localhost:5678
 
-O n8n estará pronto para uso! 🎉
+- O n8n estará pronto para uso! 🎉
 
 ## 🏗️ Estrutura do Projeto (Principais arquivos)
 
