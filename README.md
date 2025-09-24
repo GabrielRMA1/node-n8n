@@ -151,7 +151,7 @@ npm run format
 
 ### 🐛 Solução de Problemas
 
-## Problema Comum: Node não aparece
+**Problema Comum: Node não aparece**
 
 ```powershell
 
@@ -162,7 +162,7 @@ docker-compose up
 
 ```
 
-## Erro de Build
+**Erro de Build**
 
 ```powershell
 
@@ -172,7 +172,7 @@ npm run build
 
 ```
 
-## Problemas de Docker
+**Problemas de Docker**
 
 - Certifique-se de que o Docker Desktop está em execução
 
