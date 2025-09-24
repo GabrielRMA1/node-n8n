@@ -51,6 +51,6 @@
     "n8n-workflow": "*"
   },
   "dependencies": {
-    "n8n-core": "^1.112.1"
+    "n8n-core": "^1.17.0"
   }
 }

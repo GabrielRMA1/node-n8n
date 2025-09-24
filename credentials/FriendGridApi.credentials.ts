@@ -1,35 +1,21 @@
-import {
-	IAuthenticateGeneric,
-	ICredentialTestRequest,
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+import type { INodeCredentials, INodeProperties } from 'n8n-workflow';
 
-export class FriendGridApi implements ICredentialType {
-	name = 'friendGridApi';
-	displayName = 'FriendGrid API';
-	properties: INodeProperties[] = [
-		{
-			displayName: 'API Key',
-			name: 'apiKey',
-			type: 'string',
-			default: '',
-		},
-	];
+export class FriendGridApi implements INodeCredentials {
+    name = 'friendGridApi';
+    displayName = 'FriendGrid API';
+    documentationUrl = 'https://docs.sendgrid.com/api-reference/contacts/add-or-update-a-contact';
+    properties: INodeProperties[] = [
+        {
+            displayName: 'API Key',
+            name: 'apiKey',
+            type: 'string' as const,
+            typeOptions: {
+                password: true,
+            },
+            default: '',
+            required: true,
+        },
+    ];
 
-	authenticate: IAuthenticateGeneric = {
-		type: 'generic',
-		properties: {
-			headers: {
-				Authorization: '=Bearer {{$credentials.apiKey}}',
-			},
-		},
-	};
-
-	test: ICredentialTestRequest = {
-		request: {
-			baseURL: 'https://api.sendgrid.com/v3',
-			url: '/marketing/contacts',
-		},
-	};
+    [key: string]: any;
 }
