@@ -58,7 +58,7 @@ class Random {
                 const min = this.getNodeParameter('min', i);
                 const max = this.getNodeParameter('max', i);
                 if (min >= max) {
-                    throw new Error('Min must be less than Max');
+                    throw new Error('O menor valor deve ser menor que o maior valor.');
                 }
                 const response = await this.helpers.httpRequest({
                     method: 'GET',
