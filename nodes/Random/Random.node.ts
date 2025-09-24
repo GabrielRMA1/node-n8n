@@ -67,6 +67,12 @@ export class Random implements INodeType {
                     throw new Error('O menor valor deve ser menor que o maior valor.');
                 }
 
+								if (!verificarInteiro(min) || !verificarInteiro(max)) {
+									throw new Error('Os valores de Min e Max devem ser inteiros.');
+								}
+
+
+
                 const response = await this.helpers.httpRequest({
                     method: 'GET',
                     url: `https://www.random.org/integers/?num=1&min=${min}&max=${max}&col=1&base=10&format=plain&rnd=new`,
@@ -92,5 +98,9 @@ export class Random implements INodeType {
 
         return [this.helpers.returnJsonArray(returnData)];
     }
+
+}
+function verificarInteiro(numero: number): boolean {
+  return Number.isInteger(numero);
 }
 
