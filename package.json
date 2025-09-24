@@ -1,7 +1,7 @@
 {
-  "name": "n8n-nodes-friendgrid",
+  "name": "n8n-nodes-random",
   "version": "0.1.0",
-  "description": "n8n node to integrate with FriendGrid API",
+  "description": "n8n node para gerar números aleatórios entre um intervalo",
   "keywords": [
     "n8n-community-node-package"
   ],
@@ -36,7 +36,7 @@
       "dist/credentials/FriendGridApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/FriendGrid/FriendGrid.node.js"
+      "dist/nodes/Random/Random.node.js"
     ]
   },
   "devDependencies": {
