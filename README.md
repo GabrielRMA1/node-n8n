@@ -103,31 +103,31 @@ npm run format
 
 ## 🎮 Como Usar o Node Random
 
-### Criar Novo Workflow
+**Criar Novo Workflow**
 
 - Acesse http://localhost:5678
 
 - Clique em "+" → "Start from scratch"
 
-### Adicionar Gatilho Manual
+**Adicionar Gatilho Manual**
 
 - Clique no canvas (Quadro branco) → Busque por "Manual Trigger"
 
 - Adicione ao workflow
 
-### Adicionar Node Random
+**Adicionar Node Random**
 
 - Clique no canvas → Busque por "Random" ou "True Random Number Generator"
 
 - Seu node customizado aparecerá na lista!
 
-### Configurar Parâmetros
+**Configurar Parâmetros**
 
 - Min: Valor mínimo (padrão: 1)
 
 - Max: Valor máximo (padrão: 100)
 
-### Executar Workflow
+**Executar Workflow**
 
 - Clique em "Execute Workflow" (►)
 
